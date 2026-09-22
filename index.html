@@ -163,16 +163,26 @@
       <label>Phone / WhatsApp<input required name="phone" type="tel"></label>
       <label>Email<input required name="email" type="email"></label>
       <label>Message<textarea name="message" rows="4" placeholder="Tell us what support you are looking for"></textarea></label>
-      <label class="consent">
-        <input required type="checkbox" name="privacy_consent" value="yes">
-        I agree to the <a href="#privacy">Privacy Notice</a> and consent to the processing of my information for admissions and follow-up.
-      </label>
-      <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
+      <div class="captcha-box" aria-label="Spam protection">
+        <label>
+          <input type="checkbox" required name="captcha_confirmation" value="confirmed">
+          I’m not a robot
+        </label>
+        <small>This confirmation helps reduce automated/spam submissions.</small>
+      </div>
       <button class="btn dark" type="submit">Submit registration</button>
+      <p class="privacy-consent">
+        By submitting this form, you agree that Excel Education Academy may use the
+        information you provide to respond to your enquiry and share relevant admissions
+        or course information. Your information will not be sold or shared for unrelated
+        marketing purposes.
+        <a href="#privacy">Read our Privacy Statement</a>.
+      </p>
       </form>
   </div>
 </section>
-<section id="privacy" class="section pale">
+    
+      <section id="privacy" class="section pale">
   <div class="eyebrow">PRIVACY</div>
   <h2>Privacy Statement</h2>
   <p class="intro">
