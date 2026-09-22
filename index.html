@@ -172,46 +172,30 @@
       </form>
   </div>
 </section>
-
-
 <section id="privacy" class="section pale">
-  <div class="eyebrow">PRIVACY NOTICE</div>
-  <h2>How we use your information</h2>
-  <div class="policy">
-    <p>Excel Education Academy collects the information you provide in the registration form (parent/guardian name, student name, grade, preferred subjects, phone, email, and message) to respond to your inquiry, share admissions information, and manage batch placement.</p>
-    <p>We do not sell your data. We may contact you by phone, WhatsApp, or email regarding admissions and academic programs. You can request deletion or correction of your information by contacting us through the "Register your interest" form section above</a>.</p>
-    <p>Data Retention: We retain inquiry records for up to 12 months unless you ask us to delete them sooner.</p>
-    <p>Third Parties: This form is processed by FormSubmit. Submissions are transmitted via email to the academy’s inbox.</p>
-    <p>Security: We use reasonable administrative and technical safeguards to protect your information.</p>
-    <p>reCAPTCHA: This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a> and <a href="https://policies.google.com/terms" target="_blank" rel="noopener">Terms of Service</a> apply.</p>
-  </div>
+  <div class="eyebrow">PRIVACY</div>
+  <h2>Privacy Statement</h2>
+  <p class="intro">
+    Excel Education Academy respects your privacy. Information submitted through the
+    registration form, such as parent/guardian name, student name, grade, phone number,
+    email address, subjects, and message, is collected only so the academy can respond
+    to enquiries, provide admissions information, and communicate about relevant
+    courses or next steps.
+  </p>
+  <p class="intro">
+    We do not sell your personal information or use it for unrelated purposes.
+    Information may be processed by the form service used to deliver your submission.
+    Please avoid entering sensitive information that is not necessary for your enquiry.
+  </p>
+  <p class="intro">
+    You may contact the academy to ask about the information submitted through this form
+    or request that it be corrected or deleted, subject to applicable legal and
+    operational requirements.
+  </p>
 </section>
-
 <footer>
   <div><strong>Excel Education Academy</strong><br>Small-batch academic coaching • Hyderabad</div>
   <div>© 2026 Excel Education Academy</div>
 </footer>
-
-<script>
-  // Prevent submission if reCAPTCHA is not completed
-  document.addEventListener('DOMContentLoaded', function() {
-    var form = document.querySelector('#register form');
-    if (!form) return;
-    form.addEventListener('submit', function(e) {
-      try {
-        var response = (typeof grecaptcha !== 'undefined') ? grecaptcha.getResponse() : '';
-        if (!response) {
-          e.preventDefault();
-          alert('Please complete the reCAPTCHA to submit the form.');
-          return false;
-        }
-      } catch (err) {
-        // If grecaptcha is unavailable, allow form to proceed but log to console
-        console.warn('reCAPTCHA not available:', err);
-      }
-    });
-  });
-</script>
-
 </body>
 </html>
